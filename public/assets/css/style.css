@@ -11,7 +11,28 @@ html, body {
 
 #NavigationBar {
   width: 100%;
+  /* breakpoints.md: Extra large */
   max-width: 1200px;
   margin: 0 auto;
-  background: #000;
+  padding: 30px;
+  background: #fff;
+}
+
+#NavigationBar > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+}
+
+#NavigationBar > ul > li {
+  display: block;
+  text-align: center;
+}
+
+#NavigationBar > ul > li > a {
+  font-family: Lato, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #222;
 }
