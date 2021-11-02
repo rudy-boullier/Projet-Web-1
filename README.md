@@ -1,6 +1,6 @@
 ﻿# Projet SAE: Conception et réalisation d'un site web statique présentant le BUT informatique
 
-Hello
+Hello!
 
 ---
 
