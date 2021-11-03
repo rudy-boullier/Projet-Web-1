@@ -11,7 +11,6 @@ html, body {
 
 #NavigationBar {
   width: 100%;
-  /* breakpoints.md: Extra large */
   max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
