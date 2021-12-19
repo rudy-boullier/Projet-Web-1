@@ -29,6 +29,10 @@
     border-radius: 50px;
 }
 
+.btnAccueil{
+    text-decoration: none;
+}
+
 .transitionBlob{
     width: 100%;
     margin-top: -100px;
