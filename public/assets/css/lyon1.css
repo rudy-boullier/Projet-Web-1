@@ -1,0 +1,211 @@
+/* HAUT DE PAGE*/
+#accueil{
+    width: 100%;
+    padding: 0 5%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#accueil div.droite {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil div.gauche {
+    width: 45%;
+}
+
+#accueil img {
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    #accueil{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #accueil div.droite{
+        padding-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #accueil div.gauche{
+        width: 75%;
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 350px) {
+    #accueil{
+        width: 100%;
+        padding: 0;
+    }
+
+    #accueil div.gauche {
+        width: 85%;
+    }
+}
+
+/* TRANSITIONS */
+
+.transitionBlob {
+    width: 100%;
+}
+
+.transitionBlobTop{
+    margin-top: -50px;
+}
+
+/* BLOCK */
+
+.block{
+    width: 100%;
+    padding: 30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-items: stretch;
+}
+
+.block .texte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.block h3 {
+    margin: 10px 0;
+}
+
+.block p {
+    margin: 10px 0 20px;
+}
+
+@media (max-width: 1000px) {
+    .block{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* FORMATION */
+#formation {
+    padding: 0 5% 20px;
+    margin-top: -5px;
+    margin-bottom: -2px;
+}
+
+#formation h2 {
+    margin-top: -15px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#formation .texte {
+    width: 50%;
+}
+
+#formation img {
+    width: 40%;
+}
+
+@media (max-width: 1000px) {
+    #formation .texte {
+        width: 100%;
+    }
+
+    #formation img {
+        width: 65%;
+    }
+}
+
+@media (max-width: 650px) {
+    #formation img {
+        width: 80%;
+    }
+
+    #formation h2 {
+        margin-top: 0;
+    }
+}
+
+/* competences */
+#competences {
+    margin-bottom: -160px;
+}
+
+#competences img {
+    width: 70%;
+}
+
+@media (max-width: 650px) {
+    #competences {
+        margin-bottom: -90px;
+    }
+}
+
+/* MATÉRIEL NÉCESSAIRE */
+
+#materiel {
+    padding: 10px 5% 20px;
+    margin: -10px 0 -2px;
+}
+
+#materiel h2 {
+    margin-top: -40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#materiel .texte {
+    width: 50%;
+}
+
+#materiel img {
+    width: 45%;
+}
+
+@media (max-width: 1000px) {
+    #materiel .texte {
+        width: 100%;
+    }
+
+    #materiel img {
+        width: 80%;
+    }
+
+    #materiel .block{
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 650px) {
+    #materiel h2 {
+        margin-top: 0;
+    }
+}
+
+/* AIDES */
+
+#aides {
+    margin-bottom: -50px;
+}
+
+#aides h3 {
+    width: 100%;
+}
+
+#aides img {
+    width: 75%;
+}

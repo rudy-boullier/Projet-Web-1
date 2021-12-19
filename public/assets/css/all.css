@@ -1,0 +1,276 @@
+/* STYLE GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html, body {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+a{
+  color: inherit;
+}
+
+ul {
+  padding: 5px 0;
+}
+
+li {
+  box-sizing: border-box;
+  margin-left: 30px;
+}
+
+.bgBlanc{background-color:#FFFFFF;}
+.bgBleu{background-color:#047CFD;}
+.bgGris{background-color:#31525B;}
+
+.blanc{color:#FFFFFF;}
+.bleu{color:#047CFD;}
+.gris{color:#31525B;}
+
+h1{
+  font-size: 3.4rem;
+}
+h2{
+  font-size: 2.5rem;
+}
+h3{
+  font-size: 1.7rem;
+}
+
+.tailleGrd{font-size: 1.5rem;}
+.tailleMoy{font-size: 1.25rem;}
+.taillePet{font-size: 0.9rem;}
+
+.sousTitre{font-size: 1.3rem;}
+
+@media (max-width: 850px) {
+  h1{
+    font-size: 2.9rem;
+  }
+  h2{
+    font-size: 2.1rem;
+  }
+  h3{
+    font-size: 1.45rem;
+  }
+  
+  .tailleGrd{font-size: 1.3rem;}
+  .tailleMoy{font-size: 1rem;}
+  .taillePet{font-size: 0.8rem;}
+  
+  .sousTitre{font-size: 1.1rem;}
+}
+
+/* STYLE NAV BAR*/
+header{
+  height: 3rem;
+}
+
+nav{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  padding-left: 5%;
+}
+
+header img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5rem;
+  opacity: 100%;
+  transition: opacity 2s;
+}
+
+header .souligne{
+  text-decoration: underline;
+  text-decoration-thickness: 0.25rem;
+  text-decoration-color: #047CFD;
+}
+
+header p{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header a{
+  text-decoration: none;
+}
+
+#burger {
+  position: absolute;
+  cursor: pointer;
+  width: 2rem;
+  height: 1.5rem;
+  right: 0.7rem;
+  top: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  display: none;
+}
+
+#burger > div {
+  height: 4px;
+  background-color: #000;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+#btnMenu {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  nav{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    transition-timing-function: cubic-bezier(10,2,3,1);
+    transform: translateX(100vw);
+    top: 0;
+    z-index: 0;
+    transition: 0.5s;
+    background-color: #047CFD;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav p{
+    padding: 10px 0;
+    font-size: 1.5rem;
+  }
+
+  #burger{
+    display: flex;
+  }
+
+  #btnMenu:checked ~ nav {
+    transform: translateX(0vw);
+  }
+
+  #btnMenu:checked ~ #burger > div {
+    background-color: #FFFFFF;
+  }
+  
+  #btnMenu:checked ~ #burger > div:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  #btnMenu:checked ~ #burger > div:nth-child(2) {
+    opacity: 0;
+  }
+  #btnMenu:checked ~ #burger > div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  #btnMenu:checked ~ img{
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  header .souligne{
+    text-decoration-color: #FFFFFF;
+  }
+}
+
+
+
+
+/* STYLE FOOTER */
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+}
+
+footer div{
+  width: 30%;
+  text-align: center;
+}
+
+footer div:nth-child(2){
+  border-right: #FFFFFF 2px solid;
+  border-left: #FFFFFF 2px solid;
+}
+
+footer img{
+  margin-top: 5px;
+  height: 3rem;
+  border-radius: 0.8rem;
+}
+
+@media (max-width: 650px) {
+  footer{
+    flex-direction: column;
+  }
+
+  footer div{
+    width: 80%;
+    padding: 20px 0;
+  }
+
+  footer div:nth-child(2){
+    border-right: none;
+    border-left: none;
+    border-top: #FFFFFF 2px solid;
+    border-bottom: #FFFFFF 2px solid;
+  }
+}
+
+/* Question content*/
+
+.qContent {
+  padding: 30px 5%;
+}
+
+.qContent > div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+
+.qContent > div > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+}
+
+.qContent p{
+  padding: 10px 0;
+  text-align: justify;
+}
+
+.qContent img{
+  width: 90%;
+  padding: 20px 0;
+}
+
+@media (max-width: 1000px) {
+  .qContent > div{
+      flex-direction: column;
+  }
+  
+  .qContent > div.reverse{
+    flex-direction: column-reverse;
+  }
+
+  .qContent > div > div{
+      width: 100%;
+  }
+}

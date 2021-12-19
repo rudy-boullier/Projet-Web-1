@@ -5,44 +5,161 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Présentation du BUT informatique</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/formation.css">
 </head>
+
+<!-- PAGE LA FORMATION  -->
+
 <body>
+  <!-- Menu responsive  -->
   <header>
-    <nav id="NavigationBar">
-      <ul>
-        <li>
-          <a href="la-formation.html">La formation</a>
-        </li>
-        <li>
-          <a href="les-debouches.html">Les débouchés</a>
-        </li>
-        <li>
-          <a href="le-campus.html">Le campus</a>
-        </li>
-        <li>
-          <a href="nous-rejoindre.html">Nous rejoindre</a>
-        </li>
-      </ul>
+    <input type="checkbox" id="btnMenu">
+    <label id="burger" for="btnMenu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+    <nav class="tailleMoy">
+      <a href="./index.html" class="souligne"><p>La formation</p></a>
+      <a href="./debouche.html"><p>Les débouchés</p></a>
+      <a href="./campus.html"><p>Le campus</p></a>
+      <a href="./lyon1.html"><p>Rejoindre l'IUT Lyon 1</p></a>
     </nav>
+    <img src="./assets/img/general/blobHaut.svg" alt="Blob angle droit">
   </header>
 
-  <main>
-    <section>
-      <h1>Présentation du BUT informatique</h1>
-      <p>Tout ce que vous avez toujours voulu savoir sur le BUT informatique.</p>
-    </section>
-  </main>
-
-  <footer>
-    <div>
-      <h1>&copy; IUT Lyon 1, Université Claude Bernard</h1>
+  <!-- Haut de page avec titre et image  -->
+  <section id="accueil">
+    <div class="gauche">
+      <div class="blockTitre">
+        <h1 class="bleu">Presentation du BUT informatique</h1>
+        <p class="sousTitre gris">Tout ce que vous avez toujours voulu savoir sur le BUT informatique.</p>
+      </div>
+      <a href="#FAQ" class="btnAccueil"><p class="bgBleu blanc sousTitre">Découvrir maintenant</p></a>
     </div>
-    <div>
-      
+    
+    <div class="droite">
+      <img src="./assets/img/formation/accueilFormation.svg" alt="Image accueil page formation. Illustration d'une étudiante sur deux livres.">
     </div>
-    <div>
+  </section>
+  
+  <img src="./assets/img/general/transitionBlob1.svg" alt="Image transition" class="transitionBlob">
+  
+  <!-- Partie FAQ  -->
+  <section id="FAQ" class="bgBleu">
+    <h2 class="blanc">Tout connaitre de la formation</h2>
 
+    <div class="menuAccordeon">
+      <!-- Première question  -->
+      <input type="radio" name="question" id="question1">
+      <label for="question1" class="bleu bgBlanc tailleGrd">Qu’est ce que le BUT ?</label>
+      <div class="contentFAQ bgBlanc gris tailleMoy">
+        <div class="inner">
+          <h3 class="bleu">Qu’est ce que le BUT ?</h3>
+          <p>Le BUT pour Bachelor Universitaire et Technologique est un diplôme qui s’obtient avec trois ans d'études. C’est une formation professionnalisante, ce qui implique que les spécialités commencent assez tôt, dès la deuxième année d’enseignement. Après les deux premières années d’études, vous obtenez le diplôme de DUT (Diplôme Universitaire et Technologique) et vous pourrez poursuivre vers une école d’ingénieur. Après la troisième année, vous obtiendrez le diplôme du BUT. Deux possibilités s’offrent alors, débuter votre vie professionnelle ou poursuivre vos études avec un master par exemple. </p>
+        </div>
+      </div>
+
+      <!-- Deuxième question  -->
+      <input type="radio" name="question" id="question2">
+      <label for="question2" class="bleu bgBlanc tailleGrd">Quelles sont les matières étudiées ?</label>
+      <div class="contentFAQ bgBlanc gris tailleMoy">
+        <div class="inner">
+          <h3 class="bleu">Quelles sont les matières étudiées ?</h3>
+          <p>Les matières étudiées changent chaque semestre et diffèrent à partir de la seconde année selon les spécialités. Toutefois, la première année, on retrouve les enseignements suivants :</p>
+          <ul>
+            <li>Algorithmie</li>
+            <li>Langages C</li>
+            <li>Web (HTML, CSS)</li>
+            <li>Conception de bases de données et SQL</li>
+            <li>Architecture des systèmes informatiques</li>
+            <li>Introduction aux systèmes d’exploitation (Windows et UNIX)</li>
+            <li>Mathématiques</li>
+            <li>Anglais</li>
+            <li>Economie</li>
+            <li>Gestion des projets et des organisations</li>
+            <li>Communication</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Troisième question  -->
+      <input type="radio" name="question" id="question3">
+      <label for="question3" class="bleu bgBlanc tailleGrd">Quelle est la part théorique et celle pratique ?</label>
+      <div class="contentFAQ bgBlanc gris tailleMoy">
+        <div class="inner">
+          <h3 class="bleu">Quelle est la part théorique et celle pratique ?</h3>
+          <p>La part de pratique est assez importante par rapport à d’autres formations de part le côté professionnalisant de la formation. Ainsi, les TP sont assez fréquents (un cours sur deux environ). De plus, l’évaluation s’effectue en partie sur des projets de groupes appelés SAÉ (6 projets par semestre regroupant chacun plusieurs enseignements).</p>
+        </div>
+      </div>
+
+      <!-- Quatrième question  -->
+      <input type="radio" name="question" id="question4">
+      <label for="question4" class="bleu bgBlanc tailleGrd">Quel est le nombre d’heures de cours ?</label>
+      <div class="contentFAQ bgBlanc gris tailleMoy">
+        <div class="inner">
+          <h3 class="bleu">Quel est le nombre d’heures de cours ?</h3>
+          <p>Le nombre d'heures de cours par semaine varie en fonction de l’emploi du temps qui n’est pas régulier. Toutefois, on peut noter que les enseignements ont lieu en tranches de deux heures de 8h à 12h puis de 14h à 18h. Il faut compter en moyenne entre 35 et 40 heures par semaine, soit l’équivalent du nombre d’heures au lycée, en sachant que certaines heures réservées aux projets de groupes sont en autonomie.</p>
+          <p>Les heures de cours sont obligatoires (sauf pour les heures en autonomie) et 5 absences non-justifiées feront invalider votre semestre.</p>
+        </div>
+      </div>
+
+      <!-- Cinquième question  -->
+      <input type="radio" name="question" id="question5">
+      <label for="question5" class="bleu bgBlanc tailleGrd">Quelles sont les spécialités proposées ?</label>
+      <div class="contentFAQ bgBlanc gris tailleMoy">
+        <div class="inner">
+          <h3 class="bleu">Quelles sont les spécialités proposées ?</h3>
+          <p>Les spécialités doivent êtres choisies la première année et débutent la seconde. Le BUT informatique de la Doua propose les parcours suivants :</p>
+          <ul>
+            <li>Réalisation d’applications : conception, développement, validation (parcours axé développement informatique avec de l’alternance la troisième année).</li>
+            <li>Déploiement d’applications communicantes et sécurisées (parcours axé systèmes et réseaux avec de l’alternance dès la seconde année).</li>
+            <li>Administration, gestion et exploitation des données (parcours axé organisation et gestion des données avec de l'alternance la troisième année).</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Sixième question  -->
+      <input type="radio" name="question" id="question6">
+      <label for="question6" class="bleu bgBlanc tailleGrd">Quel est la charge de travail ?</label>
+      <div class="contentFAQ bgBlanc gris tailleMoy">
+        <div class="inner">
+          <h3 class="bleu">Quel est la charge de travail ?</h3>
+          <p>La charge de travail peut dépendre de votre niveau. Si vous avez déjà de bonnes bases en informatique (spécialité NSI au lycée par exemple) il vous sera plus simple d’aborder les notions et donc la charge de travail sera moins élevée. La charge de travail est équivalente à celle du lycée au premier semestre. Elle augmente avec le temps.</p>
+          <p>Toutefois, il est nécessaire de s’organiser afin de pouvoir concilier le travail personnel lié aux enseignements tout en avançant sur les projets de groupe.</p>
+        </div>
+      </div>
+
+      <!-- Septième question  -->
+      <input type="radio" name="question" id="question7">
+      <label for="question7" class="bleu bgBlanc tailleGrd">Quels diplômes obtient-on ?</label>
+      <div class="contentFAQ bgBlanc gris tailleMoy">
+        <div class="inner">
+          <h3 class="bleu">Quels diplômes obtient-on ?</h3>
+          <p>Après la seconde année d’études, vous obtiendrez un DUT (Diplôme Universitaire et Technologique). Votre BUT (Bachelor Universitaire et Technologique) vous sera remis à l'issue des trois années de formation.  De plus, selon les parcours, vous serez possiblement amené à passer des certifications (exemple de la certification CISCO).</p>  
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer avec hauteurs et droits  -->
+  <footer class="bgGris blanc">
+    <div class="taillePet">
+      <p>© Copyrights IUT Lyon 1 2021</p>
+      <img src="./assets/img/general/logoLyon1.jpeg" alt="Logo Lyon 1">
+    </div>
+    <div class="taillePet">
+      <p class="tailleMoy">Développeurs :</p>
+      <p>BOULLIER Rudy</p>
+      <p>GUICHON Thierry</p>
+      <p>MONTMAIN Jonathan</p>
+    </div>
+    <div class="tailleMoy">
+      <p>Projet de SAÉ</p>
+      <p>Communication, Web</p>
+      <p>Réalisation : 2021</p>
     </div>
   </footer>
 </body>
